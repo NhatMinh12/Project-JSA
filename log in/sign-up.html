@@ -11,7 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./sign-in.css">
-</head>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+
 
 <body>
     <div id="content">
@@ -19,13 +20,13 @@
             <div class="headContent">
                 <h1>Creat a Sticky List account</h1>
             </div>
-            <div class="form">
+            <div class="form" id="signUp">
                 <div class="email">
-                    <input id="inputEmail" type="email" placeholder="email" required>
+                    <input id="inputEmail" type="email" placeholder="email" name="email" required>
                     <p id="warningEmail" class="ghost">Please enter a valid email address.</p>
                 </div>
                 <div class="pass">
-                    <input id="inputPass" type="password" placeholder="password (more than 7 characters)" required>
+                    <input id="inputPass" type="password" placeholder="password (more than 7 characters)" name="password" required>
                     <p id="warningPass" class="ghost">The password must be more 7 characters long.</p>
                 </div>
                 <div class="confirmPass">
@@ -45,6 +46,24 @@
             </div>
         </div>
     </div>
+
+<script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-analytics.js"></script>
+
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyCVlcNbbf__OqsHaxos1KJMjifad1XUZOs",
+    authDomain: "todolist-f41e2.firebaseapp.com",
+    databaseURL: "https://todolist-f41e2-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "todolist-f41e2",
+    storageBucket: "todolist-f41e2.appspot.com",
+    messagingSenderId: "163425014358",
+    appId: "1:163425014358:web:25d582cf3ed862ad48a1f7",
+    measurementId: "G-07ZY0NQRQJ"
+  };
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
 
 <script src="./sign-in.js"></script>
 

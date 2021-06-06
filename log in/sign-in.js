@@ -8,6 +8,8 @@ let warnEmail = document.getElementById('warningEmail');
 let warnPass = document.getElementById('warningPass');
 let warnCfPass = document.getElementById('warningCfPass');
 
+let signUpForm = document.getElementById('signUpForm')
+
 signInBtn.addEventListener('click',function(){
     let myEmail= inputEmail.value
     let myPass= inputPass.value 
@@ -51,3 +53,20 @@ inputcfPass.addEventListener('keyup',function(){
             warnCfPass.classList.remove('ghost')
         } else {warnCfPass.classList.add('ghost')}
 })
+
+function signIn(){
+    let myEmail= inputEmail.value
+    let myPass= inputPass.value 
+    firebase.auth().createUserWithEmailAndPassword(myEmail,myPass)
+.then((userCredential) => {
+    
+    var email = userCredential.myEmail;
+
+    })
+    .catch((error) => {
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    
+    });
+}
+
