@@ -10,15 +10,20 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./sign-in.css">
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <link rel="stylesheet" href="./sign-up.css">
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js" defer></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-analytics.js" defer></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-firestore.js" defer></script>
+    <script src="./sign-up.js" defer></script>
 
 
 <body>
     <div id="content">
         <div class="bodyContent">
             <div class="headContent">
-                <h1>Creat a Sticky List account</h1>
+                <h1>Create a Sticky List account</h1>
             </div>
             <div class="form" id="signUp">
                 <div class="email">
@@ -33,9 +38,6 @@
                     <input id="inputcfPass" type="password" placeholder="confirm password" required>
                     <p id="warningCfPass" class="ghost">Password does not match</p>
                 </div>
-                <div class="term">
-                    <input type="checkbox">I accept the Terms of Service and the Privacy Policy
-                </div>
                 <div class="submit">
                     <button class="signInBtn" id="signUp">Creat account</button>
                 </div>
@@ -47,25 +49,7 @@
         </div>
     </div>
 
-<script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-analytics.js"></script>
 
-<script>
-  var firebaseConfig = {
-    apiKey: "AIzaSyCVlcNbbf__OqsHaxos1KJMjifad1XUZOs",
-    authDomain: "todolist-f41e2.firebaseapp.com",
-    databaseURL: "https://todolist-f41e2-default-rtdb.asia-southeast1.firebasedatabase.app",
-    projectId: "todolist-f41e2",
-    storageBucket: "todolist-f41e2.appspot.com",
-    messagingSenderId: "163425014358",
-    appId: "1:163425014358:web:25d582cf3ed862ad48a1f7",
-    measurementId: "G-07ZY0NQRQJ"
-  };
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
-</script>
-
-<script src="./sign-in.js"></script>
 
 
 

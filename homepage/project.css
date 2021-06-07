@@ -45,6 +45,20 @@
 .plus{
     height:20px ;
     width: 20px;
-    justify-content: space-between;
+    margin-top: -5px;
 }
 
+.note
+{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background-color:#fffa69;
+    height: 50px;
+    
+}
+
+.input
+{
+    margin-left: 10px;
+    margin-top: 10px;
+}
