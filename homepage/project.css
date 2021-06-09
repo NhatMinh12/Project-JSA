@@ -1,6 +1,11 @@
+@font-face {
+    font-family: Ogg;
+    src: url(ogg.otf);
+}
+
 body {
     width: 100%;
-    font-family: ogg;
+    font-family: Ogg;
     margin: 0;
 }
 
@@ -77,7 +82,4 @@ body {
     margin-left: 200px;
 }
 
-@font-face {
-    font-family: ogg;
-    src: url('./ogg.otf');
-}
+
