@@ -1,3 +1,9 @@
+body {
+    width: 100%;
+    font-family: ogg;
+    margin: 0;
+}
+
 .navbarContainer{
     width: 100%;
     height: 15%;
@@ -30,6 +36,7 @@
 .category:hover {
     color:rgb(42, 177, 255);
     background-color: whitesmoke;
+
 }
 
 .Logo{
@@ -54,11 +61,23 @@
     margin-bottom: 10px;
     background-color:#fffa69;
     height: 50px;
-    
+    padding-top: 10px;
 }
 
 .input
 {
     margin-left: 10px;
     margin-top: 10px;
+    border: 0 !important;
+    outline: 0 !important;
+    background-color:blanchedalmond; 
+    width: 310px;
+}
+.remove {
+    margin-left: 200px;
+}
+
+@font-face {
+    font-family: ogg;
+    src: url('./ogg.otf');
 }
