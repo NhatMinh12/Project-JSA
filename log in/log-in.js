@@ -35,6 +35,7 @@ signInBtn.addEventListener("click", function () {
     .then((querySnapshot) => {
         querySnapshot.forEach((doc) => {
             // console.log(doc.id, " => ", doc.data());
+            localStorage.setItem('userId', doc.id)
             window.location.href = '../homepage/project.html'
         });
 

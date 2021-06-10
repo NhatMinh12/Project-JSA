@@ -40,7 +40,7 @@ signInBtn.addEventListener("click", function () {
       })
       .then((docRef) => {
         // console.log("Document written with ID: ", docRef.id);
-        window.location.href = './log-in.html;'
+        window.location.href = './log-in.html'
     })
     .catch((error) => {
         // console.error("Error adding document: ", error);
