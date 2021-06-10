@@ -29,6 +29,7 @@ create_btn.addEventListener('click', function(){
 function handleRemove(e){
     // console.log(e);
     let parentTag = e.parentNode.parentNode
+    console.log(parentTag.getAttribute('task_id'));
     parentTag.remove()
 }
 
@@ -64,7 +65,7 @@ function getTaskFromFireStore(){
     database.collection("tasks").where("user_id", "==", `${localStorage.getItem('userId')}`).get().then((querySnapshot) => {
         querySnapshot.forEach((doc) => {
             // console.log(`${doc.id} => ${doc.data().content}`);
-            let newnote = `<div class = 'note'>
+            let newnote = `<div class = 'note' task_id='${doc.id}'>
                             <div> ${doc.data().content} ${doc.data().time} 
                                 <img class = 'plus remove' src = 'remove.png' onclick='handleRemove(this)'>
                             </div>
@@ -76,3 +77,14 @@ function getTaskFromFireStore(){
 }
 
 getTaskFromFireStore()
+
+//update
+// var db = firebase.firestore();
+// db.collection("users").doc(doc.id).update({foo: "bar"});
+
+// var cityRef = db.collection('tasks').doc('id_task');
+
+// // Remove the 'capital' field from the document
+// var removeCapital = cityRef.update({
+//     capital: firebase.firestore.FieldValue.delete()
+// });
