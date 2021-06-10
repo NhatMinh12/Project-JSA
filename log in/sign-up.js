@@ -31,8 +31,16 @@ signInBtn.addEventListener("click", function () {
   if (
     checkEmail(myEmail) == true &&
     checkPassword(myPass) == true &&
-    myPass === myCfPass
-  ) {
+    myPass === myCfPass &&
+    db.collection("account").where("email", "!=", myEmail)
+    .get()
+    .then((docRef) => {
+      // console.log("Document written with ID: ", docRef.id);
+  })
+    .catch((error) => {
+      // console.error("Error adding document: ", error);
+  }))
+  {
     db.collection("account")
       .add({
         email: inputEmail.value,
@@ -40,7 +48,7 @@ signInBtn.addEventListener("click", function () {
       })
       .then((docRef) => {
         // console.log("Document written with ID: ", docRef.id);
-        window.location.href = './log-in.html;'
+        window.location.href = './log-in.html'
     })
     .catch((error) => {
         // console.error("Error adding document: ", error);
@@ -69,6 +77,18 @@ inputEmail.addEventListener("keyup", function () {
   } else {
     warnEmail.classList.add("ghost");
   }
+
+  if (
+    db.collection("account").where("email", "==", myEmail)
+    .get()
+    .then((querySnapshot) => {
+        querySnapshot.forEach((doc) => {
+            checkEmail.classList.remove('ghost')
+        });
+
+    })
+    .catch()
+  ){}
 });
 
 inputPass.addEventListener("keyup", function () {

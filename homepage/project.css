@@ -82,18 +82,23 @@ body {
     margin-left: 200px;
 }
 
-.form-control {
-    outline: 0 !important;
-}
-
 #Time {
     margin-top: 3px;
-    margin-left: 65px;
+    margin-left: 120px;
     font-size: 25px;
 }
 
 #realTime {
     margin-top: 3px;
-    margin-left: 65px;
+    margin-left: 165px;
     font-size: 25px;
+}
+
+#navbarSupportedContent svg {
+    height: 30px;
+    width: 30px;
+}
+
+.form-inline {
+    margin-right: 70px;
 }

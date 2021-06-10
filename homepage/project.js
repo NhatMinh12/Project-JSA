@@ -8,8 +8,10 @@ let input = document.getElementById("input")
 newdate = day + ',' + date + "/" + month + "/" + year;
 document.getElementById("Time").textContent = newdate
 
+let logoutBtn = document.getElementById('light');
+
 var hour = dateObj.getUTCHours() +7;
-var minute = dateObj.getUTCMinutes();
+var minute = (dateObj.getUTCMinutes()<10?'0':'') +dateObj.getUTCMinutes()
 newTime = hour +':'+ minute
 document.getElementById('realTime').textContent = newTime
 
@@ -35,3 +37,8 @@ function handleRemove(e){
     let parentTag = e.parentNode.parentNode
     parentTag.remove()
 }
+
+logoutBtn.addEventListener('click',function(){
+    window.location.replace('../log in/log-in.html')
+    localStorage.clear();
+})
