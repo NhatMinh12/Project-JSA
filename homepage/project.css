@@ -21,7 +21,7 @@ body {
     position: fixed;
     /* top: 100px; */
     left: -220px;
-    background-color: whitesmoke;
+    background-color: blanchedalmond;
     transition: left 1s;
     z-index: 1;
 }
@@ -36,11 +36,11 @@ body {
     padding: 10px 10px 10px 30px;
     font-size: 30px;
     color: black;
-    transition: background-color 1s;
+    /* transition: background-color 1s; */
 }
 .category:hover {
     color:rgb(42, 177, 255);
-    background-color: whitesmoke;
+    background-color: #fffa69;
 
 }
 
@@ -82,4 +82,18 @@ body {
     margin-left: 200px;
 }
 
+.form-control {
+    outline: 0 !important;
+}
 
+#Time {
+    margin-top: 3px;
+    margin-left: 65px;
+    font-size: 25px;
+}
+
+#realTime {
+    margin-top: 3px;
+    margin-left: 65px;
+    font-size: 25px;
+}

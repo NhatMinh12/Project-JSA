@@ -1,10 +1,18 @@
 var dateObj = new Date();
-var month = dateObj.getUTCMonth() + 1; //months from 1-12
-var day = dateObj.getUTCDate();
+var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+var day = days[dateObj.getUTCDay()]
+var month = dateObj.getUTCMonth() +1; //months from 1-12
+var date = dateObj.getUTCDate();
 var year = dateObj.getUTCFullYear();
 let input = document.getElementById("input")
-newdate = year + "/" + month + "/" + day;
+newdate = day + ',' + date + "/" + month + "/" + year;
 document.getElementById("Time").textContent = newdate
+
+var hour = dateObj.getUTCHours() +7;
+var minute = dateObj.getUTCMinutes();
+newTime = hour +':'+ minute
+document.getElementById('realTime').textContent = newTime
+
 let container = document.getElementById('container')
 
 let create_btn = document.getElementById("Create_btn");
