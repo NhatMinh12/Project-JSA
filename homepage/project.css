@@ -88,13 +88,13 @@ body {
 
 #Time {
     margin-top: 3px;
-    margin-left: 65px;
+    margin-left: 165px;
     font-size: 25px;
 }
 
 #realTime {
     margin-top: 3px;
-    margin-left: 65px;
+    margin-left: 250px;
     font-size: 25px;
 }
 
@@ -111,4 +111,8 @@ body {
     border: 0 !important;
     outline: 0 !important;
     background-color: blanchedalmond;
+}
+
+#homeBtn {
+    cursor: pointer;
 }
