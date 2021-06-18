@@ -97,3 +97,18 @@ body {
     margin-left: 65px;
     font-size: 25px;
 }
+
+#navbarSupportedContent svg {
+    height: 30px;
+    width: 30px;
+}
+
+.form-inline {
+    margin-right: 70px;
+}
+
+#time-input {
+    border: 0 !important;
+    outline: 0 !important;
+    background-color: blanchedalmond;
+}
