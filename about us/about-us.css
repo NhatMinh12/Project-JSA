@@ -1,0 +1,98 @@
+body {
+    display: flex;
+    width: 100%;
+    font-family: ogg;
+}
+
+#sidebar {
+    width: 300px;
+    background-color: rgb(143, 182, 172);
+    height: 1200px;
+
+}
+
+#navbar {
+    width: 100%;
+
+}
+
+#textintro {
+    background-image: url('https://hbr.org/resources/images/article_assets/2015/05/MAY15_26_456701506.jpg');
+    height: 300px;
+    text-align: center;
+}
+
+#textintro h1 {
+    background-color: rgba(0, 0, 0, .6);
+    color: white;
+    display: inline-block;
+    margin-top: 135px;
+}
+
+#our-plan {
+    text-align: center;
+    padding: 50px 0px 50px 0px;
+    background-color: #f6f6f6;
+}
+
+#our-plan em {
+    font-size: 30px;
+}
+
+.our-team-text {
+    text-align: center;
+    padding: 50px 0px 50px 0px;
+}
+
+.our-team-member {
+    display: flex;
+    height: 200px;
+    margin: auto;
+    margin-bottom: 100px;
+    padding: 5px 20px 5px 20px;
+    border-radius: 10px;
+    max-width: 60%;
+}
+
+.otm-name {
+    text-align: center;
+    margin: auto;
+}
+
+.our-team-member img {
+    object-fit: cover;
+}
+
+#contact-us {
+    text-align: center;
+    background-color: #f6f6f6;
+}
+
+#contact-us-main {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#contact-us-main svg {
+    margin: 0px 50px 0px 50px;
+    width: 70px;
+}
+
+.underline {
+    width: 50px;
+}
+
+.headingText {
+    border-bottom: 5px solid #fffa69;
+    line-height: 2.3;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+@font-face {
+    font-family: ogg;
+    src: url('./ogg.otf');
+}
+
