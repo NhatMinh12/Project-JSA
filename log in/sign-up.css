@@ -5,6 +5,7 @@ body {
     background-repeat: no-repeat;
     background-position-y: 5px;
     background-size: 40%;
+    font-family: ogg;
 }
 
 #content {
@@ -81,3 +82,7 @@ a {
     margin: 20px 0px 10px 0px;
 }
 
+@font-face {
+    font-family: Ogg;
+    src: url(ogg.otf);
+}
