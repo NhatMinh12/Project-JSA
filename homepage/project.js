@@ -99,3 +99,8 @@ logoutBtn.addEventListener("click", function () {
   window.location.replace("../log in/log-in.html");
   localStorage.clear();
 });
+
+let homeBtn = document.getElementById('homeBtn')
+homeBtn.addEventListener('click',function(){
+  window.location.href='./project.html'
+})

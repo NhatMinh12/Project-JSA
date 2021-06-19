@@ -1,20 +1,16 @@
 body {
-    display: flex;
     width: 100%;
-    font-family: ogg;
+    font-family: Ogg;
+    margin: 0;
 }
 
-#sidebar {
-    width: 300px;
-    background-color: rgb(143, 182, 172);
-    height: 1200px;
-
-}
-
-#navbar {
+.navbarContainer{
     width: 100%;
+    height: 15%;
+    background-color: #fffa69;
 
 }
+
 
 #textintro {
     background-image: url('https://hbr.org/resources/images/article_assets/2015/05/MAY15_26_456701506.jpg');
@@ -96,3 +92,68 @@ body {
     src: url('./ogg.otf');
 }
 
+.sidebar {
+    width: 250px;
+    height: 1000px;
+    position: fixed;
+    /* top: 100px; */
+    left: -220px;
+    background-color: blanchedalmond;
+    transition: left 1s;
+    z-index: 1;
+}
+.sidebar:hover {
+    position: fixed;
+    /* top: 100px; */
+    left: 0px;
+}
+
+.category {
+    width: inherit;
+    /* background-color: whitesmoke; */
+    padding: 10px 10px 10px 30px;
+    font-size: 30px;
+    color: black;
+    /* transition: background-color 1s; */
+}
+.category:hover {
+    color:rgb(42, 177, 255);
+    background-color: #fffa69;
+
+}
+
+#Time {
+    margin-top: 3px;
+    margin-left: 165px;
+    font-size: 25px;
+}
+
+#realTime {
+    margin-top: 3px;
+    margin-left: 250px;
+    font-size: 25px;
+}
+
+#navbarSupportedContent svg {
+    height: 30px;
+    width: 30px;
+}
+
+.form-inline {
+    margin-right: 70px;
+}
+
+#time-input {
+    border: 0 !important;
+    outline: 0 !important;
+    background-color: blanchedalmond;
+}
+
+#homeBtn {
+    cursor: pointer;
+}
+
+.Logo{
+    width: 10%;
+    height: 10%;
+}
