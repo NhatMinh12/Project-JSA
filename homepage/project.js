@@ -81,7 +81,7 @@ function getTaskFromFireStore() {
     let result = [];
     querySnapshot.forEach((doc) => {
         let newnote = `<div class = 'note' task_id='${doc.id}'>
-                            <div> <span id='dataContent'>${doc.data().content}</span> ${doc.data().time} 
+                            <div> <span id='dataContent'>${doc.data().content}</span> <span id='dataTime'>${doc.data().time} </span>
                                 <img class = 'plus remove' src = 'remove.png' data-id='${
                                     doc.id
                                 }' onclick='handleRemove(this)'>
